@@ -1,0 +1,7 @@
+<div class="form-group" *ngIf="control">
+  <label [for]="id">{{label}}</label>
+  <input [type]="type" [id]="id" class="form-control" [formControl]="control" [placeholder]="placeholder"
+    [ngClass]="{ 'is-invalid': invalid, 'is-valid': valid }" [readonly]="readonly" [attr.disabled]="disabled"
+    [required]="required">
+  <validation-errors *ngIf="invalid" [error]="errorMessage"></validation-errors>
+</div>

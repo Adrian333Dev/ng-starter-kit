@@ -1,20 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import { InputComponent } from '@shared/components';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NgbModule],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    RouterOutlet,
+    NgbModule,
+    InputComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  constructor(private modalService: NgbModal) {}
+export class AppComponent implements OnInit {
+  form = new FormControl('Default value', [
+    Validators.required,
+    Validators.minLength(3),
+  ]);
 
-  public open(modal: any): void {
-    this.modalService.open(modal);
-  }
+  constructor(private fb: FormBuilder) {}
+  ngOnInit(): void {}
 }

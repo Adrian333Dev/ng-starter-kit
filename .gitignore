@@ -34,9 +34,12 @@ yarn-error.log
 /connect.lock
 /coverage
 /libpeerconnection.log
-testem.log
+testem.logw
 /typings
 
 # System files
 .DS_Store
 Thumbs.db
+
+# MD files
+notes.md
