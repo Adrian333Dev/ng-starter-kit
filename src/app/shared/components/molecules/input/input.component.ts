@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NG_VALUE_ACCESSOR, ReactiveFormsModule } from '@angular/forms';
 
 import { ControlValueAccessorDirective } from '@shared/directives';
-import { ValidationErrorsComponent } from '../validation-errors';
+import { ValidationErrorsComponent } from '../../atoms/validation-errors';
 
 type InputType = 'text' | 'number' | 'email' | 'password';
 
