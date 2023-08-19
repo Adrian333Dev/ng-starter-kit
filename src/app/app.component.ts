@@ -10,7 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { InputComponent } from '@shared/components';
-import { DemoComponent } from '@demos';
+import { DemoComponent, Demo2Component } from '@demos';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +22,7 @@ import { DemoComponent } from '@demos';
     NgbModule,
     InputComponent,
     DemoComponent,
+    Demo2Component,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
