@@ -10,6 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { InputComponent } from '@shared/components';
+import { DemoComponent } from '@demos';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { InputComponent } from '@shared/components';
     RouterOutlet,
     NgbModule,
     InputComponent,
+    DemoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
