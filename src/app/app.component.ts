@@ -5,12 +5,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   FormBuilder,
   FormControl,
-  FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
 import { InputComponent } from '@shared/components';
 import { DemoComponent, Demo2Component, Demo3Component } from '@demos';
+import { NavbarComponent } from '@shared/components/organisms';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +24,7 @@ import { DemoComponent, Demo2Component, Demo3Component } from '@demos';
     DemoComponent,
     Demo2Component,
     Demo3Component,
+    NavbarComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
