@@ -22,3 +22,20 @@ $dark: #171923;
 }
 
 @import "./theme/custom-dark.scss";
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bs-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  transition: 0.3s ease-in-out all;
+  &:hover {
+    background: lighten($primary, 10%);
+  }
+}
