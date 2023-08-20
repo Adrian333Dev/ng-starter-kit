@@ -1,3 +1,24 @@
+$primary: #9f7aea;
+$secondary: #2d3748;
+$success: #38b2ac;
+$info: #06b6d4;
+$warning: #ff7300;
+$danger: #be123c;
+$light: #e8edf4;
+$dark: #171923;
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --bs-secondary: #2d3748;
+  --bs-secondary-rgb: 45, 55, 72;
+  --bs-light: #e8edf4;
+  --bs-light-rgb: 232, 237, 244;
+  --bs-dark: #171923;
+  --bs-dark-rgb: 23, 25, 35;
+
+  --bs-light-dark: #242c3a;
+  --bs-light-dark-rgb: 36, 44, 58;
+}
+
+@import "./theme/custom-dark.scss";

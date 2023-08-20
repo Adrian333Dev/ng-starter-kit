@@ -10,7 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { InputComponent } from '@shared/components';
-import { DemoComponent, Demo2Component } from '@demos';
+import { DemoComponent, Demo2Component, Demo3Component } from '@demos';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +23,7 @@ import { DemoComponent, Demo2Component } from '@demos';
     InputComponent,
     DemoComponent,
     Demo2Component,
+    Demo3Component,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
