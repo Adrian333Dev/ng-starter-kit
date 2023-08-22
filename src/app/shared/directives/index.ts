@@ -1,1 +1,1 @@
-export * from './control-value-accessor/control-value-accessor.directive';
+export * from '../form-flex/directives/control-value-accessor/control-value-accessor.directive';

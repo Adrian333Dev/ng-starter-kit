@@ -22,7 +22,7 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@core/*": ["./src/app/core/*"],
-      "@auth/*": ["./src/app/auth/*"],
+      "@auth/*": ["./src/app/core/auth/*"],
       "@shared/*": ["./src/app/shared/*"],
       "@/*": ["./src/app/*"],
       "@demos": ["./src/app/demos"]

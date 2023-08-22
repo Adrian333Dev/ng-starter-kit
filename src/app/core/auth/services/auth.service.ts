@@ -15,4 +15,9 @@ export class AuthService {
   logout() {
     console.log('logout');
   }
+
+  isAuthenticated() {
+    console.log('isAuthenticated');
+    return true;
+  }
 }
